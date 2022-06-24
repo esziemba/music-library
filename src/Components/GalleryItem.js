@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 function GalleryItem(props) {
-    const [view, setView] = useState(false)
+    let [view, setView] = useState(false)
 
     const simpleStyle = {
         'width': '25vw',
@@ -30,7 +30,6 @@ function GalleryItem(props) {
             </div>
         )
     }
-    
 
     const detailView = () => {
         return (
@@ -46,6 +45,8 @@ function GalleryItem(props) {
     return (
         <div onClick={() => setView(!view)}
         style={{'display': 'inline-block'}}>
+        
+            {/* This simple ternary shows the simple view when 'view' is false! */}
             {view ? detailView() : simpleView()}
 
         </div>

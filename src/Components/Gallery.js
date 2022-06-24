@@ -10,10 +10,9 @@ function Gallery(props){
 
     return (
         <div>
-        {display}
+            {display}
         </div>
     )
 }
-
 
 export default Gallery

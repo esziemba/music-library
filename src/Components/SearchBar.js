@@ -1,4 +1,8 @@
+import { useState } from 'react'
+
 function SearchBar(props){
+    // We can comment out our searchTerm state variable as we are not using it!
+    // let [searchTerm, setSearchTerm] = useState('')
 
     return (
             <form>
@@ -13,3 +17,4 @@ function SearchBar(props){
 
 export default SearchBar
 
+    
