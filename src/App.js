@@ -8,9 +8,10 @@ import ArtistView from './Components/ArtistView'
 function App() {
     let [search, setSearch] = useState('')
     let [message, setMessage] = useState('Search for Music!')
-    let [data, setData] = useState([])
+    let [data, setData] = useState('Search for Music!')
+    let searchInput = useRef('')
 
-    const API_URL = 'https://itunes.apple.com/search?term='
+    const API_URL = 'https://itunes.apple.com/search?term='    
 
     useEffect(() => {
         if (search) {
