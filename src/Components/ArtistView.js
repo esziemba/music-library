@@ -34,9 +34,9 @@ function ArtistView() {
     const navButtons = () => {
         return (
             <div>
-                <Button onClick={ () => navigate(-1)}>Back</Button>
+                <button onClick={ () => navigate(-1)}>Back</button>
                 |
-                <Button onClick={ () => navigate('/')}>Home</Button>
+                <button onClick={ () => navigate('/')}>Home</button>
             </div>
         )
     }
